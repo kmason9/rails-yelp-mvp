@@ -1,0 +1,8 @@
+<h2>New Restaurant</h2>
+<%=simple_form_for @restaurant do |f| %>
+<%= f.input :name %>
+<%= f.input :category, :collection => %w[Chinese Italian Japanese French Belgian]%>
+<%= f.input :address %>
+<%= f.input :phone_number %>
+<%= f.submit %>
+<% end %>
